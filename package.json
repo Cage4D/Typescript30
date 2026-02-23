@@ -1,7 +1,8 @@
 {
   "scripts": {
     "build": "tsc",
-    "start": "node index.js"
+    "start": "node index.js",
+    "watch": "tsc --watch"
   },
   "devDependencies": {
     "typescript": "^5.9.3"
