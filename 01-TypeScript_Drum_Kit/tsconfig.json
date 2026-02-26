@@ -2,9 +2,10 @@
   "compilerOptions": {
     "target": "ES2019",
     "module": "CommonJS",
-    "outDir": "TypeScript_Drum_Kit/dist",
+    "outDir": "./dist",
+    "rootDir": "./",
     "strict": true,
     "esModuleInterop": true
   },
-  "include": ["*.ts", "TypeScript_Drum_Kit/index.ts"]
+  "include": ["index.ts"]
 }

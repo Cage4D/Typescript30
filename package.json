@@ -1,8 +1,10 @@
 {
   "scripts": {
-    "build": "tsc",
-    "start": "node index.js",
-    "watch": "tsc --watch"
+    "build:drum-kit": "tsc -p 01-Typescript_Drum_Kit",
+    "build:clock": "tsc -p 02-CSS_and_JS_Clock",
+
+    "watch:drum-kit": "tsc -p 01-Typescript_Drum_Kit --watch",
+    "watch:clock": "tsc -p 02-CSS_and_JS_Clock --watch"
   },
   "devDependencies": {
     "typescript": "^5.9.3"
