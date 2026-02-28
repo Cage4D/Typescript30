@@ -2,9 +2,11 @@
   "scripts": {
     "build:drum-kit": "tsc -p 01-Typescript_Drum_Kit",
     "build:clock": "tsc -p 02-CSS_and_JS_Clock",
+    "build:css-var": "tsc -p 03-CSS_Variables",
 
     "watch:drum-kit": "tsc -p 01-Typescript_Drum_Kit --watch",
-    "watch:clock": "tsc -p 02-CSS_and_JS_Clock --watch"
+    "watch:clock": "tsc -p 02-CSS_and_JS_Clock --watch",
+    "watch:css-var": "tsc -p 03-CSS_Variables --watch"
   },
   "devDependencies": {
     "typescript": "^5.9.3"
