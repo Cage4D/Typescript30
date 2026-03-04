@@ -28,25 +28,42 @@
     
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's
+    const fifteen = inventors.filter(person => person.year >= 1500 && person.year <= 1600);
 
     // Array.prototype.map()
     // 2. Give us an array of the inventors first and last names
+    const fullName = inventors.map(person => `${person.first} ${person.last}`)
 
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
+    const oldestToYoungest = inventors.sort((a, b) => a.year - b.year)
+    console.table(oldestToYoungest)
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live all together?
+    const totalYearsLived = inventors.reduce((accumulator, currentValue) => accumulator + (currentValue.passed - currentValue.year), 0)
+    console.log(`The total amount of years lived is ${totalYearsLived}`)
 
     // 5. Sort the inventors by years lived
+    const longestLivedInventor = inventors.sort((a, b) => (b.passed - b.year) - (a.passed - a.year))
+    console.table(longestLivedInventor)
 
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+    const category = document.querySelector<HTMLDivElement>(".mw-category")
+    const links = Array.from(category?.querySelectorAll("a") ?? [])
+    const de = links.map(link => link.textContent).filter(streetname => streetname.includes("de"))
 
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
+    const sortedPeopleList = people.sort((a, b) => a.split(",")[0].localeCompare(b.split(",")[0]))
+    console.table(sortedPeopleList)
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+    const instancesOfEach = data.reduce<Record<string, number>>((accumulator, item) => {
+      accumulator[item] = (accumulator[item] || 0) + 1;
+      return accumulator;
+    }, {})
