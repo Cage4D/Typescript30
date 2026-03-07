@@ -4,11 +4,13 @@
     "build:clock": "tsc -p 02-CSS_and_JS_Clock",
     "build:css-var": "tsc -p 03-CSS_Variables",
     "build:array-cardio-1": "tsc -p 04-Array_Cardio_Day_1",
+    "build:flex-panels": "tsc -p 05-Flex_Panels_Image_Gallery",
 
     "watch:drum-kit": "tsc -p 01-Typescript_Drum_Kit --watch",
     "watch:clock": "tsc -p 02-CSS_and_JS_Clock --watch",
     "watch:css-var": "tsc -p 03-CSS_Variables --watch",
-    "watch:array-cardio-1": "tsc -p 04-Array_Cardio_Day_1 --watch"
+    "watch:array-cardio-1": "tsc -p 04-Array_Cardio_Day_1 --watch",
+    "watch:flex-panels": "tsc -p 05-Flex_Panels_Image_Gallery"
   },
   "devDependencies": {
     "typescript": "^5.9.3"
