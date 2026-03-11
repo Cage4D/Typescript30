@@ -35,4 +35,4 @@
     // Find the comment with this ID
     // delete the comment with the ID of 823423
     const index = comments.findIndex(msgString => msgString.id === 823423)
-    comments.splice(index, 1
+    comments.splice(index, 1)
