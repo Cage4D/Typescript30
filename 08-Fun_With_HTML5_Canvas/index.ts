@@ -15,6 +15,7 @@ let isDrawing = false
 let lastX = 0;
 let lastY = 0;
 let hue:number = 0;
+let direction = true;
 
 function draw(e:MouseEvent) {
     if (!isDrawing) return;
@@ -28,6 +29,10 @@ function draw(e:MouseEvent) {
     [lastX, lastY] = [e.offsetX, e.offsetY]
     hue++;
     hue %= 360
+    if (ctx!.lineWidth >= 200 || ctx!.lineWidth <= 1) {
+        direction = !direction
+    }
+    direction ? ctx!.lineWidth++ : ctx!.lineWidth--;
 }
 
 canvas.addEventListener("mousemove", draw);
