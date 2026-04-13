@@ -9,6 +9,7 @@
     "build:array-cardio-2": "tsc -p 07-Array_Cardio_Day_2",
     "build:html-canvas": "tsc -p 08-Fun_With_HTML5_Canvas",
     "build:dev-tools-tricks": "tsc -p 09-Dev_Tools_Tricks",
+    "build:check-multiple-checkboxes": "tsc -p 10-Hold-Shift-To-Check-Multiple-Checkboxes",
     
     "watch:drum-kit": "tsc -p 01-Typescript_Drum_Kit --watch",
     "watch:clock": "tsc -p 02-CSS_and_JS_Clock --watch",
@@ -18,7 +19,8 @@
     "watch:type-ahead": "tsc -p 06-Ajax_Type_Ahead --watch",
     "watch:array-cardio-2": "tsc -p 07-Array_Cardio_Day_2 --watch",
     "watch:html-canvas": "tsc -p 08-Fun_With_HTML5_Canvas --watch",
-    "watch:dev-tools-tricks": "tsc -p 09-Dev_Tools_Tricks --watch"
+    "watch:dev-tools-tricks": "tsc -p 09-Dev_Tools_Tricks --watch",
+    "watch:check-multiple-checkboxes": "tsc -p 10-Hold-Shift-To-Check-Multiple-Checkboxes --watch"
   },
   "devDependencies": {
     "typescript": "^5.9.3"
