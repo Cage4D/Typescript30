@@ -1,2 +1,2 @@
-const checkboxes = document.querySelectorAll<HTMLInputElement>(".inbox input[type='checked']")
+const checkboxes = document.querySelectorAll<HTMLInputElement>(".inbox input[type='checkbox']")
 console.log(checkboxes)
