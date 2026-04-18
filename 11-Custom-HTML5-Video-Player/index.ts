@@ -16,5 +16,11 @@ function togglePlay() {
   }
 }
 
+function updateButton(e) {
+  const icon = e.currentTarget.pause ? '►' : '❚ ❚';
+}
+
 video?.addEventListener("click", togglePlay);
+video?.addEventListener("play", updateButton);
+video?.addEventListener("pause", updateButton);
 toggle?.addEventListener("click", togglePlay);
