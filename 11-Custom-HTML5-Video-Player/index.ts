@@ -16,8 +16,10 @@ function togglePlay() {
   }
 }
 
-function updateButton(e) {
-  const icon = e.currentTarget.pause ? '►' : '❚ ❚';
+function updateButton(e: Event) {
+  const vid = e.currentTarget as HTMLVideoElement;
+  const icon = vid.paused ? '►' : '❚ ❚';
+  if (toggle) toggle.textContent = icon;
 }
 
 video?.addEventListener("click", togglePlay);
