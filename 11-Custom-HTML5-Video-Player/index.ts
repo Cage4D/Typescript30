@@ -22,7 +22,14 @@ function updateButton(e: Event) {
   if (toggle) toggle.textContent = icon;
 }
 
+function skip(this: HTMLButtonElement) {
+  if (!video) return;
+  const skipValue = parseFloat(this.dataset.skip || "0");
+  video.currentTime += skipValue;
+}
+
 video?.addEventListener("click", togglePlay);
 video?.addEventListener("play", updateButton);
 video?.addEventListener("pause", updateButton);
 toggle?.addEventListener("click", togglePlay);
+skipButtons?.forEach(buttons => buttons.addEventListener("click", skip))
