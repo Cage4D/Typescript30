@@ -1,4 +1,4 @@
-const player = document.querySelector<HTMLVideoElement>(".player");
+const player = document.querySelector<HTMLDivElement>(".player");
 const video = player?.querySelector<HTMLVideoElement>(".viewer");
 const progress = player?.querySelector<HTMLDivElement>(".progress");
 const progressBar = player?.querySelector<HTMLDivElement>(".progress__filled");
@@ -28,8 +28,13 @@ function skip(this: HTMLButtonElement) {
   video.currentTime += skipValue;
 }
 
+function handleRangeUpdate(this:HTMLInputElement) {
+  console.log(this.value)
+}
+
 video?.addEventListener("click", togglePlay);
 video?.addEventListener("play", updateButton);
 video?.addEventListener("pause", updateButton);
 toggle?.addEventListener("click", togglePlay);
 skipButtons?.forEach(buttons => buttons.addEventListener("click", skip))
+ranges?.forEach(range => range.addEventListener("change", handleRangeUpdate))
