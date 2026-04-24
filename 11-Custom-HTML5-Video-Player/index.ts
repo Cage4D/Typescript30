@@ -1,5 +1,5 @@
-const player = document.querySelector<HTMLDivElement>(".player");
-const video = player?.querySelector<HTMLVideoElement>(".viewer");
+const player = document.querySelector<HTMLDivElement>(".player")!;
+const video = player.querySelector<HTMLVideoElement>(".viewer")!;
 const progress = player?.querySelector<HTMLDivElement>(".progress");
 const progressBar = player?.querySelector<HTMLDivElement>(".progress__filled");
 const toggle = player?.querySelector<HTMLButtonElement>(".toggle");
@@ -29,7 +29,8 @@ function skip(this: HTMLButtonElement) {
 }
 
 function handleRangeUpdate(this:HTMLInputElement) {
-  console.log(this.value)
+  if (!video) return;
+  (video as any)[this.name] = parseFloat(this.value);
 }
 
 video?.addEventListener("click", togglePlay);
@@ -38,3 +39,4 @@ video?.addEventListener("pause", updateButton);
 toggle?.addEventListener("click", togglePlay);
 skipButtons?.forEach(buttons => buttons.addEventListener("click", skip))
 ranges?.forEach(range => range.addEventListener("change", handleRangeUpdate))
+ranges?.forEach(range => range.addEventListener("mousemove", handleRangeUpdate))
