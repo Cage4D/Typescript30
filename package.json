@@ -11,6 +11,7 @@
     "build:dev-tools-tricks": "tsc -p 09-Dev_Tools_Tricks",
     "build:check-multiple-checkboxes": "tsc -p 10-Hold-Shift-To-Check-Multiple-Checkboxes",
     "build:custom-html5-video-player": "tsc -p 11-Custom-HTML5-Video-Player",
+    "build:key-sequence-detection": "tsc -p 12-Key-Sequence-Detection",
     
     "watch:drum-kit": "tsc -p 01-Typescript_Drum_Kit --watch",
     "watch:clock": "tsc -p 02-CSS_and_JS_Clock --watch",
@@ -22,7 +23,8 @@
     "watch:html-canvas": "tsc -p 08-Fun_With_HTML5_Canvas --watch",
     "watch:dev-tools-tricks": "tsc -p 09-Dev_Tools_Tricks --watch",
     "watch:check-multiple-checkboxes": "tsc -p 10-Hold-Shift-To-Check-Multiple-Checkboxes --watch",
-    "watch:custom-html5-video-player": "tsc -p 11-Custom-HTML5-Video-Player --watch"
+    "watch:custom-html5-video-player": "tsc -p 11-Custom-HTML5-Video-Player --watch",
+    "watch:key-sequence-detection": "tsc -p 12-Key-Sequence-Detection --watch"
   },
   "devDependencies": {
     "typescript": "^5.9.3"
