@@ -13,6 +13,7 @@
     "build:custom-html5-video-player": "tsc -p 11-Custom-HTML5-Video-Player",
     "build:key-sequence-detection": "tsc -p 12-Key-Sequence-Detection",
     "build:slide-in-on-scroll": "tsc -p 13-Slide-In-On-Scroll",
+    "build:javascript-references-vs-copying": "tsc -p 14-Javascript-References-vs-copying",
     
     "watch:drum-kit": "tsc -p 01-Typescript_Drum_Kit --watch",
     "watch:clock": "tsc -p 02-CSS_and_JS_Clock --watch",
@@ -26,7 +27,8 @@
     "watch:check-multiple-checkboxes": "tsc -p 10-Hold-Shift-To-Check-Multiple-Checkboxes --watch",
     "watch:custom-html5-video-player": "tsc -p 11-Custom-HTML5-Video-Player --watch",
     "watch:key-sequence-detection": "tsc -p 12-Key-Sequence-Detection --watch",
-    "watch:slide-in-on-scroll": "tsc -p 13-Slide-In-On-Scroll --watch"
+    "watch:slide-in-on-scroll": "tsc -p 13-Slide-In-On-Scroll --watch",
+    "watch:javascript-references-vs-copying": "tsc -p 14-Javascript-References-vs-copying --watch"
   },
   "devDependencies": {
     "typescript": "^5.9.3"
