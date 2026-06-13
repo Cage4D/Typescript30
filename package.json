@@ -16,6 +16,7 @@
     "build:javascript-references-vs-copying": "tsc -p 14-Javascript-References-vs-copying",
     "build:local-storage": "tsc -p 15-LocalStorage",
     "build:mouse-move-shadow": "tsc -p 16-Mouse-Move-Shadow",
+    "build:sort-without-articles": "tsc -p 17-Sort-Without-Articles",
     
     "watch:drum-kit": "tsc -p 01-Typescript_Drum_Kit --watch",
     "watch:clock": "tsc -p 02-CSS_and_JS_Clock --watch",
@@ -32,7 +33,8 @@
     "watch:slide-in-on-scroll": "tsc -p 13-Slide-In-On-Scroll --watch",
     "watch:javascript-references-vs-copying": "tsc -p 14-Javascript-References-vs-copying --watch",
     "watch:local-storage": "tsc -p 15-LocalStorage --watch",
-    "watch:mouse-move-shadow": "tsc -p 16-Mouse-Move-Shadow --watch"
+    "watch:mouse-move-shadow": "tsc -p 16-Mouse-Move-Shadow --watch",
+    "watch:sort-without-articles": "tsc -p 17-Sort-Without-Articles --watch"
   },
   "devDependencies": {
     "typescript": "^5.9.3"
