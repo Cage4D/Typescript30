@@ -18,6 +18,7 @@
     "build:mouse-move-shadow": "tsc -p 16-Mouse-Move-Shadow",
     "build:sort-without-articles": "tsc -p 17-Sort-Without-Articles",
     "build:add-up-times-with-reduce": "tsc -p 18-Adding-Up-Times-With-Reduce",
+    "build:webcam-fun": "tsc -p 19-Webcam-Fun",
     
     "watch:drum-kit": "tsc -p 01-Typescript_Drum_Kit --watch",
     "watch:clock": "tsc -p 02-CSS_and_JS_Clock --watch",
@@ -36,7 +37,8 @@
     "watch:local-storage": "tsc -p 15-LocalStorage --watch",
     "watch:mouse-move-shadow": "tsc -p 16-Mouse-Move-Shadow --watch",
     "watch:sort-without-articles": "tsc -p 17-Sort-Without-Articles --watch",
-    "watch:add-up-times-with-reduce": "tsc -p 18-Adding-Up-Times-With-Reduce --watch"
+    "watch:add-up-times-with-reduce": "tsc -p 18-Adding-Up-Times-With-Reduce --watch",
+    "watch:webcam-fun": "tsc -p 19-Webcam-Fun --watch"
   },
   "devDependencies": {
     "typescript": "^5.9.3"
