@@ -1,1 +1,10 @@
-const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
+const arrow = document.querySelector<HTMLOrSVGImageElement>(".arrow")
+const speed = document.querySelector<HTMLSpanElement>(".speed-value")
+
+navigator.geolocation.watchPosition((data) => {
+    console.log(data)
+    speed!.textContent = `${data.coords.speed}`;
+    arrow!.style.transform = `rotate(${data.coords.heading}deg)`
+}, (err) => {
+    console.error(err)
+})
