@@ -21,6 +21,8 @@
     "build:webcam-fun": "tsc -p 19-Webcam-Fun",
     "build:speech-detection": "tsc -p 20-Speech-Detection",
     "build:geolocation": "tsc -p 21-Geolocation",
+    "build:follow-along-link-highlighter": "tsc -p 22-Follow-Along-Link-Highlighter",
+    "build:speech-synthesis": "tsc -p 23-Speech-Synthesis",
     
     "watch:drum-kit": "tsc -p 01-Typescript_Drum_Kit --watch",
     "watch:clock": "tsc -p 02-CSS_and_JS_Clock --watch",
@@ -42,7 +44,9 @@
     "watch:add-up-times-with-reduce": "tsc -p 18-Adding-Up-Times-With-Reduce --watch",
     "watch:webcam-fun": "tsc -p 19-Webcam-Fun --watch",
     "watch:speech-detection": "tsc -p 20-Speech-Detection --watch",
-    "watch:geolocation": "tsc -p 21-Geolocation --watch"
+    "watch:geolocation": "tsc -p 21-Geolocation --watch",
+    "watch:follow-along-link-highlighter": "tsc -p 22-Follow-Along-Link-Highlighter --watch",
+    "watch:speech-synthesis": "tsc -p 23-Speech-Synthesis --watch"
   },
   "devDependencies": {
     "typescript": "^5.9.3"
