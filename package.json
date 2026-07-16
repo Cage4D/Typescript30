@@ -23,7 +23,8 @@
     "build:geolocation": "tsc -p 21-Geolocation",
     "build:follow-along-link-highlighter": "tsc -p 22-Follow-Along-Link-Highlighter",
     "build:speech-synthesis": "tsc -p 23-Speech-Synthesis",
-    
+    "build:sticky-nav": "tsc -p 24-Sticky-Nav",
+
     "watch:drum-kit": "tsc -p 01-Typescript_Drum_Kit --watch",
     "watch:clock": "tsc -p 02-CSS_and_JS_Clock --watch",
     "watch:css-var": "tsc -p 03-CSS_Variables --watch",
@@ -46,7 +47,8 @@
     "watch:speech-detection": "tsc -p 20-Speech-Detection --watch",
     "watch:geolocation": "tsc -p 21-Geolocation --watch",
     "watch:follow-along-link-highlighter": "tsc -p 22-Follow-Along-Link-Highlighter --watch",
-    "watch:speech-synthesis": "tsc -p 23-Speech-Synthesis --watch"
+    "watch:speech-synthesis": "tsc -p 23-Speech-Synthesis --watch",
+    "watch:sticky-nav": "tsc -p 24-Sticky-Nav --watch"
   },
   "devDependencies": {
     "typescript": "^5.9.3"
